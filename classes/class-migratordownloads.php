@@ -54,6 +54,11 @@ if ( ! class_exists( 'MigratorDownloads' ) ) :
 			);
 		}
 
+		/**
+		 * It downloads a file from a remote server.
+		 *
+		 * @param \WP_REST_Request request The request object.
+		 */
 		public function wpr_migrator_init_callback( \WP_REST_Request $request ) {
 
 			$params = $request->get_params();
@@ -116,6 +121,15 @@ if ( ! class_exists( 'MigratorDownloads' ) ) :
 			}
 		}
 
+		/**
+		 * A callback function that is called by the curl_setopt function.
+		 *
+		 * @param resource The cURL resource.
+		 * @param download_size The total size of the file being downloaded.
+		 * @param downloaded The number of bytes downloaded so far.
+		 * @param upload_size The total size of the upload (in bytes).
+		 * @param uploaded The number of bytes uploaded.
+		 */
 		public function progress( $resource, $download_size, $downloaded, $upload_size, $uploaded ) {
 			if ( $download_size > 0 ) {
 				$this->progress_download = $downloaded / $download_size * 100;

@@ -81,6 +81,14 @@ if ( ! class_exists( 'MigratorDashboard' ) ) :
 			include_once WPR_MIGRATOR_PLUGIN_TEMPLATES . 'dashboard.php';
 		}
 
+		/**
+		 * It takes a string, repeats it a number of times, shuffles it, and then returns a substring of the
+		 * result
+		 *
+		 * @param length The length of the random string.
+		 *
+		 * @return A random string of characters.
+		 */
 		public function str_random( $length = 16 ) {
 			$pool = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 

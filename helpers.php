@@ -18,15 +18,15 @@ if ( ! function_exists( 'str_contains' ) ) {
 	}
 }
 
-/**
- * It returns true if the string contains any of the keywords in the array
- *
- * @param string string The string to search for the keywords in.
- * @param array exclusion_keywords An array of keywords to check for in the string.
- *
- * @return True or False
- */
 if ( ! function_exists( 'keywords_in_string' ) ) {
+	/**
+	 * It returns true if the string contains any of the keywords in the array
+	 *
+	 * @param string string The string to search for the keywords in.
+	 * @param array exclusion_keywords An array of keywords to check for in the string.
+	 *
+	 * @return True or False
+	 */
 	function keywords_in_string( string $string, array $exclusion_keywords = array() ) {
 
 		foreach ( $exclusion_keywords as $keyword ) {
@@ -40,6 +40,14 @@ if ( ! function_exists( 'keywords_in_string' ) ) {
 }
 
 if ( ! function_exists( 'wpr_request_migrator_api' ) ) {
+	/**
+	 * It makes a GET request to the endpoint provided, and returns the response
+	 *
+	 * @param endpoint The endpoint of the API you're calling.
+	 * @param params {
+	 *
+	 * @return The response from the API.
+	 */
 	function wpr_request_migrator_api( $endpoint, $params ) {
 
 		$ch      = curl_init();

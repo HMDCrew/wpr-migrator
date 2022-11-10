@@ -1,0 +1,10 @@
+.d-flex { display: flex }
+
+.terminal-container .terminal-content {
+    overflow: auto;
+    width: 100%;
+    height: 0;
+    background-color: black;
+    color: white }
+    .terminal-container .terminal-content .terminal-row .message {
+        margin-right: 12px }

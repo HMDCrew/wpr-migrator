@@ -1,0 +1,53 @@
+{
+  "name": "mathiasreker/php-chmod",
+  "description": "php-chmod is a PHP library for easily changing file/directory permissions recursively.",
+  "license": "MIT",
+  "type": "library",
+  "keywords": [
+    "file",
+    "directory",
+    "permissions",
+    "chmod"
+  ],
+  "authors": [
+    {
+      "name": "Mathias Reker",
+      "role": "Developer"
+    }
+  ],
+  "homepage": "https://github.com/mathiasreker/php-chmod",
+  "require": {
+    "php": ">=7.4",
+    "ext-mbstring": "*",
+    "symfony/finder": "^5.4"
+  },
+  "require-dev": {
+    "ergebnis/composer-normalize": "^2.28",
+    "friendsofphp/php-cs-fixer": "^3.11",
+    "phpstan/phpstan": "^1.8",
+    "phpunit/phpunit": "^9.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "MathiasReker\\PhpChmod\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "MathiasReker\\PhpChmod\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "ergebnis/composer-normalize": true,
+      "phpunit/phpunit": true
+    },
+    "sort-packages": true
+  },
+  "scripts": {
+    "cs-check": "./vendor/bin/php-cs-fixer fix . --dry-run --diff",
+    "cs-fix": "./vendor/bin/php-cs-fixer fix .",
+    "phpstan": "./vendor/bin/phpstan analyse src/ --level=9",
+    "test": "./vendor/bin/phpunit --bootstrap vendor/autoload.php --colors=always tests/"
+  }
+}

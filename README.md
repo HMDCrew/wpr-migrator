@@ -9,3 +9,8 @@ Plugin to migrate domine to another domine<br>
 *Key local domine authorization from destination site so source*<br>
 <img src="https://i.ibb.co/6mZhBfQ/dest.png" />
 <img src="https://i.ibb.co/kywtv2g/src.png" />
+
+# NOTE
+*Pantheon after replace site you need commit changes on dashboard*
+<br>
+<img src="https://i.ibb.co/pnZmBqK/pantheon.png" />

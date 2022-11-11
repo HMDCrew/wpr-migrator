@@ -13,4 +13,4 @@ Plugin to migrate domine to another domine<br>
 # NOTE
 *Pantheon after replace site you need commit changes on dashboard*
 <br>
-<img src="https://i.ibb.co/pnZmBqK/pantheon.png" />
+<img src="https://i.ibb.co/q7J3yvg/pantheon2.png" />

@@ -6,7 +6,7 @@ Plugin to migrate domine to another domine<br>
 <img src="https://i.ibb.co/HKw1Sqc/migrator-page.png" />
 
 ## Copy Keys
-*Key local domine authorization from destination site so source*<br>
+*"Key local domine authorization" from destination site to source*<br>
 *On source domine complete field "Destination domine"*<br>
 <img src="https://i.ibb.co/6mZhBfQ/dest.png" />
 <img src="https://i.ibb.co/kywtv2g/src.png" />
